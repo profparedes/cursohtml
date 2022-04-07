@@ -1,0 +1,206 @@
+<html>
+   <head>
+      <meta charset="urf-8" />
+      <title>Formulário</title>
+   </head>
+   <body>
+      <div>
+         <a href="index.html">
+            <h3>&Larr; Voltar a página inicial &Larr;</h3>
+         </a>
+         <details>
+            <summary><b>ir para outra página:&#8615;</b></summary>
+            <ul>
+               <a href="listas.html" accesskey="l">
+                  <li>Listas</li>
+               </a>
+               <a href="iframe.html" accesskey="i">
+                  <li>Iframe</li>
+               </a>
+               <a href="tabela.html" accesskey="t">
+                  <li>Tabelas</li>
+               </a>
+               <a href="div.html" accesskey="d">
+                  <li>Div's</li>
+               </a>
+               <a href="media.html" accesskey="m">
+                  <li>Media</li>
+               </a>
+               <a href="barra.html" accesskey="b">
+                  <li>Barras</li>
+               </a>
+               <a href="script.html" accesskey="a">
+                  <li>Alerta!</li>
+               </a>
+               <a href="svg.html" accesskey="s">
+                  <li>SVG</li>
+               </a>
+            </ul>
+         </details>
+      </div>
+      <h1>Meu Formulário</h1>
+      <p>Formulário de teste</p>
+      <form
+         id="formulario"
+         action=""
+         method="post"
+         enctype="multipart/form-data"
+      >
+         <fieldset>
+            <legend>Preencha o formulário</legend>
+            <div>
+               <label for="">Nome</label>
+               <input
+                  type="text"
+                  name="nome"
+                  required
+                  placeholder="Digite seu nome"
+                  id=""
+                  autofocus
+               />
+            </div>
+
+            <div>
+               <label for="">Email</label>
+               <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Digite seu email"
+                  id=""
+                  autocomplete="on"
+               />
+            </div>
+
+            <div>
+               <label for="">Selecione sua cidade</label>
+               <select required="required" name="Cidade" id="">
+                  <optgroup label="Rio de janeiro">
+                     <option selected="selected" value="">Selecione</option>
+                     <option value="NF">Nova Friburgo</option>
+                     <option value="BJ">Bom Jardim</option>
+                     <option value="CM">Cachoeiras de Macacú</option>
+                     <option value="DB">Duas Barras</option>
+                  </optgroup>
+                  <optgroup label="São Paulo">
+                     <option value="ABC">ABC paulista</option>
+                     <option value="JC">São josé dos campos</option>
+                  </optgroup>
+               </select>
+            </div>
+
+            <div>
+               <label for="">Sua Foto</label>
+               <input required type="file" name="foto" />
+            </div>
+         </fieldset>
+
+         <div>
+            <p>Selecione seu sexo</p>
+            <label for="sexo1"
+               ><input
+                  type="radio"
+                  id="sexo1"
+                  name="sexo"
+                  value="m"
+               />Masculino</label
+            >
+            <label for="sexo2"
+               ><input
+                  type="radio"
+                  id="sexo2"
+                  name="sexo"
+                  value="f"
+               />Feminino</label
+            >
+            <label for="sexo3"
+               ><input
+                  type="radio"
+                  id="sexo3"
+                  name="sexo"
+                  value="n"
+                  disabled
+               />Neutro</label
+            >
+         </div>
+
+         <div>
+            <p>Selecione suas áreas de interesses:</p>
+
+            <input type="checkbox" name="area" id="" value="front" />FrontEnd
+            <input type="checkbox" name="area" id="" value="back" />BackEnd
+            <input type="checkbox" name="area" id="" value="mobile" />Mobile
+            <input type="checkbox" name="area" id="" value="games" />Games
+         </div>
+
+         <div>
+            <p>Qual é a sua pretenção salarial?</p>
+            <input
+               type="number"
+               name="salario"
+               min="5000"
+               max="20000"
+               step="1000"
+            />
+            <input type="range" name="salario" />
+            <input type="color" />
+         </div>
+
+         <div>
+            <p>Cite um site do seu portifólio</p>
+            <input type="url" name="url" />
+            <p>Mes e ano de criaçao do site</p>
+            <input type="month" name="mes" />
+            <p>Pesquise seu site</p>
+            <input type="search" />
+         </div>
+
+         <div>
+            <p for="">Biografia</p>
+            <textarea
+               name="biografia"
+               placeholder="Digite sua biografia"
+               required
+               id=""
+               cols="50"
+               rows="10"
+            ></textarea>
+            <p>contato:</p>
+            <input type="tel" name="telefone" />
+         </div>
+         <br />
+         <div>
+            <label for="">Senha</label>
+            <input
+               type="password"
+               name="senha"
+               required
+               placeholder="Digite sua senha"
+               id=""
+            />
+         </div>
+         <br />
+         <div>
+            <p>data/hora de preenchimento</p>
+            <input type="date" name="data" min="2022-04-06" />
+            <input type="time" name="hora" />
+         </div>
+         <br />
+         <div>
+            <label for="confirmacao">
+               <input
+                  name="confirmacao"
+                  type="checkbox"
+                  name="confirmacao"
+                  id="confirmacao"
+               />
+               Receber confirmação de formulário
+            </label>
+         </div>
+
+         <div>
+            <button name="enviar" value="1" type="submit">Enviar</button>
+         </div>
+      </form>
+   </body>
+</html>

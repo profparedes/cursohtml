@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Tabela</title>
+
+      <style>
+         table,
+         th,
+         td {
+            border: 1px solid #000;
+         }
+         th,
+         td {
+            padding: 7px;
+         }
+         .nome {
+            background-color: lightgreen;
+         }
+         .idade {
+            background-color: lightblue;
+         }
+         .sexo {
+            background-color: pink;
+         }
+         .cargo {
+            background-color: lightgrey;
+         }
+      </style>
+   </head>
+   <body>
+      <div>
+         <a href="index.html">
+            <h3>&Larr; Voltar a página inicial &Larr;</h3>
+         </a>
+         <details>
+            <summary><b>ir para outra página:&#8615;</b></summary>
+            <ul>
+               <a href="listas.html" accesskey="l">
+                  <li>Listas</li>
+               </a>
+               <a href="iframe.html" accesskey="i">
+                  <li>Iframe</li>
+               </a>
+               <a href="div.html" accesskey="d">
+                  <li>Div's</li>
+               </a>
+               <a href="media.html" accesskey="m">
+                  <li>Media</li>
+               </a>
+               <a href="formulario.html" accesskey="f">
+                  <li>Formulário</li>
+               </a>
+               <a href="barra.html" accesskey="b">
+                  <li>Barras</li>
+               </a>
+               <a href="script.html" accesskey="a">
+                  <li>Alerta!</li>
+               </a>
+               <a href="svg.html" accesskey="s">
+                  <li>SVG</li>
+               </a>
+            </ul>
+         </details>
+      </div>
+      <h1>Tabelas</h1>
+      <table border="1">
+         <caption>
+            Cadastro Único (CÚ)
+         </caption>
+
+         <colgroup>
+            <col class="nome" />
+            <col class="idade" />
+            <col class="sexo" />
+            <col class="cargo" />
+         </colgroup>
+
+         <thead>
+            <tr>
+               <th>Nome</th>
+               <th>Idade</th>
+               <th>Sexo</th>
+               <th>Cargo</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+               <th>Fred</th>
+               <th>33</th>
+               <th>M</th>
+               <th rowspan="2">Dev</th>
+            </tr>
+            <tr>
+               <th>Fábio</th>
+               <th>34</th>
+               <th>M</th>
+            </tr>
+            <tr>
+               <th>Pitoko</th>
+               <th>31</th>
+               <th>?</th>
+               <th>Cozinheiro</th>
+            </tr>
+         </tbody>
+
+         <tfoot>
+            <tr>
+               <th>total</th>
+               <th colspan="3">3</th>
+            </tr>
+         </tfoot>
+      </table>
+   </body>
+</html>
